@@ -1,14 +1,13 @@
-import React from 'react';
 
-const home = () => {
+import React from 'react';
+import { NavBar, Icon } from 'antd-mobile';
+import "../index";
+
+
+export default function Home() {
     return (
         <div>
-            <h1>Welcome Home</h1>
-            <p>This where we're going to have a very simple page that is going to have a the option to Log in as user or create account.
-                
-            </p>
+            <h1>hi</h1>
         </div>
     );
-}
-
-export default home;
+    };

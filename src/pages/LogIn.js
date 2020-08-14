@@ -4,13 +4,25 @@ import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import "../index.css"
 
 
-const logIn = () => {
+const LogIn = () => {
+
+  const styles = {
+    formBorder: {
+    margin: `${200}px`,
+    padding: `${100}px`,
+    border: `${2}px`,
+    borderColor: `black`,
+    borderStyle: `solid`,
+  }
+  }
+
     return (
       <div className="container">
         <div className="align">
-        <Form
+        <Form style={styles.formBorder}
       name="normal_login"
       className="login-form"
+      
       initialValues={{
         remember: true,
       }}
@@ -64,4 +76,4 @@ const logIn = () => {
     );
 }
 
-export default logIn;
+export default LogIn;
