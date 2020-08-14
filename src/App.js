@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
-import Home from './components/Home';
-import logIn from './components/logIn';
+import NavBarMenu from "./components/NavBar/index";
+import { Button } from 'antd-mobile';
+import { Form, Input, Checkbox } from 'antd';
+import './App.css';
+import 'antd-mobile/dist/antd-mobile.css';
+import DatePicker from 'antd-mobile/lib/date-picker';
+import 'antd-mobile/lib/date-picker/style/css';
+import Home from './pages/Home';
+import logIn from './pages/LogIn';
 import Navigation from './components/Navigation';
-import CreateAccount from './components/CreateAccount';
+import CreateAccount from './pages/CreateAccount';
 
 class App extends Component {
   render() {
