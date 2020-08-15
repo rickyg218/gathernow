@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import {NavBar} from 'antd-mobile';
 
 import './App.css';
 import 'antd-mobile/dist/antd-mobile.css';

@@ -42,6 +42,37 @@ code {
   width: 100%;
 }
 
+/* segmented footer */
+.sc-example {
+  color: rgb(123, 48, 167);
+  font-size: 14px;
+
+    margin: 700px;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0px;
+ position: fixed;
+  width: 100%;
+  background-color: blueviolet;
+  color: white;
+  text-align: center;
+  height: 100px;
+  margin-top: 10px;
+  
+}
+
+
 /* home styling for nav bar */
 /* .trigger {
   font-size: 18px;

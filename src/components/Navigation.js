@@ -2,22 +2,21 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import {NavBar, Icon, Menu} from 'antd-mobile';
 
+import '../index';
+
 
 const Navigation = () => {
 
     const styles = {
         navStyle: {
-            padding: `${50}px`,
+            
             display: 'flex',
             justifyContent: 'space-around',
-            color: 'black',
-            backgroundColor: '#e74c3c',
+            color: 'White',
+            backgroundColor: 'blueviolet',
+            padding: `${50}px`,
         },
-        NavLink: {
-            color: 'black',
-        }
-    
-       
+   
     }
 
   return (
@@ -33,6 +32,16 @@ const Navigation = () => {
         <h1>GatherNow</h1>
   
     </NavBar>
+    <div>
+        body
+    </div>
+    <div>
+
+
+
+    </div>
+    
+
      </>
     
   );
