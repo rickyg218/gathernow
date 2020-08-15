@@ -1,13 +1,16 @@
 
 import React from 'react';
-import { NavBar, Icon } from 'antd-mobile';
 import "../index";
-
+import Navigation from '../components/Navigation';
+import {NavLink} from "react-router-dom";
+// import {NavBar} from 'antd-mobile';
 
 export default function Home() {
     return (
         <div>
-            <h1>hi</h1>
+          {/* <NavLink to="/logIn">logIn</NavLink>,
+        <NavLink to="CreateAccount">CreateAccount</NavLink>, */}
+          {/* <NavLink to="/">Home</NavLink> */}
         </div>
     );
     };
