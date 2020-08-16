@@ -72,26 +72,13 @@ html, body {
   
 }
 
+/* event viewer styling */
 
-/* home styling for nav bar */
-/* .trigger {
-  font-size: 18px;
-  line-height: 64px;
-  padding: 0 24px;
-  cursor: pointer;
-  transition: color 0.3s;
+.eventView {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 10%;
+  left: 0;
+  right: 0;
+  z-index: 99;
 }
-
-.trigger:hover {
-  color: #1890ff;
-}
-
-.logo {
-  height: 32px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 16px;
-}
-
-.site-layout .site-layout-background {
-  background: #fff;
-} */
