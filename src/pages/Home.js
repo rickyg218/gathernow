@@ -1,13 +1,17 @@
 
 import React from 'react';
-import { NavBar, Icon } from 'antd-mobile';
-import "../index";
+import PickerView from '../components/EventViewer';
 
+
+import "../index";
 
 export default function Home() {
     return (
         <div>
-            <h1>hi</h1>
+      
+        <PickerView/>
+        {/* <Cards></Cards> */}
+    
         </div>
     );
-    };
+    }
