@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+
+.site-input-group-wrapper {
+width: 700px;
+
+}
+
 /* login form styling from ant */
 .form-border {
   margin: 200px;
@@ -21,7 +27,6 @@ code {
   border-style: solid;  
  
 }
-
 
 .align {
   display: flex;

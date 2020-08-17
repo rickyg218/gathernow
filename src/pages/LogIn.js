@@ -5,9 +5,9 @@ import '../index';
 
 export default function LogIn() {
   return(
-    <>
+    <div>
     <LogInForm/>
-  
-</>
+   
+</div>
   )
 }
