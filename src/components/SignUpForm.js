@@ -15,6 +15,7 @@ const styles = {
   border: `${2}px`,
   borderColor: `black`,
   borderStyle: `solid`,
+  color: 'red',
 },
 }
 
@@ -22,9 +23,9 @@ const styles = {
 
 
     <div className="container">
-      <h1 className='align'>Build your User Profile Here</h1>
       <div className="align ">
         <Form className="site-input-group-wrapper" style={styles.formBorder}>
+          <p>* Build your user Profile here</p>
           <Form.Item>
             <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="username" />
           </Form.Item>
