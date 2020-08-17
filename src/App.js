@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import 'antd-mobile/dist/antd-mobile.css';
 import 'antd-mobile/lib/date-picker/style/css';
 import './App.css';
-import LogInForm from './components/LogInForm';
+
 // import './index';
 
 
@@ -26,8 +26,7 @@ class App extends Component {
           <Switch>
             <Route exact path ="/CreateAccount" component={CreateAccount}/>
             <Route exact path="/Home" component={Home}/>
-            <Route exact path="/LogIn" component={LogInForm} />
-            {/* <LogInForm/> */}
+            <Route exact path="/LogIn" component={LogIn} />
           </Switch>
           <Footer/>
         </div>
