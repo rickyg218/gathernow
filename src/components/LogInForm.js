@@ -13,6 +13,7 @@ const LogInForm = () => {
       border: `${2}px`,
       borderColor: `black`,
       borderStyle: `solid`,
+      color: `red`,
     },
   };
 
@@ -26,19 +27,19 @@ const LogInForm = () => {
           initialValues={{
             remember: true,
           }}
-        >
+        ><p>* Login to your account</p>
           <Form.Item
-            name="username"
+            name="email"
             rules={[
               {
                 required: true,
-                message: "Please input your Username!",
+                message: "Please input your Email!",
               },
             ]}
           >
             <Input
               prefix={<UserOutlined className="site-form-item-icon" />}
-              placeholder="Username"
+              placeholder="Email"
             />
           </Form.Item>
           <Form.Item
