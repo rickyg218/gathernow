@@ -7,7 +7,7 @@ import "../index.css";
 
 
 
-const SignUpForm = () => {
+const EventForm = () => {
 const styles = {
   formBorder: {
   margin: `${200}px`,
@@ -25,12 +25,12 @@ const styles = {
     <div className="container">
       <div className="align ">
         <Form className="site-input-group-wrapper" style={styles.formBorder}>
-          <p>* Build your user Profile here</p>
+          <p>* Create your Event </p>
           <Form.Item>
-            <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="username" />
+            <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Event Name" />
           </Form.Item>
           <Form.Item>
-           <Input className="site-form-item-icon" maxLength={15} placeholder="password"/>
+           <Input className="site-form-item-icon" placeholder="Event Location"/>
           </Form.Item>
           <Form.Item>
           <Input placeholder="name"/>

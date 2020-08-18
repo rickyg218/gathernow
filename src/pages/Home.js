@@ -1,15 +1,17 @@
 
 import React from 'react';
-import PickerView from '../components/EventViewer';
-
-
+import Select from '../components/EventViewer';
+import Space from '../components/EventCreation/TimeSelector';
+import OverlayVisiable from '../components/NavBarComp/DropDown'
 import "../index";
 
 export default function Home() {
     return (
         <div>
-      
-        <PickerView/>
+<Select/>
+
+
+        {/* <PickerView/> */}
         {/* <Cards></Cards> */}
     
         </div>
