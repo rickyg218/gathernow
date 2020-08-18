@@ -48,7 +48,7 @@ const styles = {
             <Input maxLength={2} placeholder="Min age requirement"/>
           </Form.Item>
           <Form.Item>
-            <TextArea rows={4} placeholder="Additional info to add.."/>
+            <TextArea rows={4} maxLength={200} placeholder="Additional info"/>
           </Form.Item>
           <Form.Item>
             <Button
