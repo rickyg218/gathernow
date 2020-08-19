@@ -1,37 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import Container from '../components/UserProfile/UserProfile';
 import '../index';
 import Button from "../components/UserProfile/Card";
-export default function MyAccount() {
+import API from "../utils/API"
+function MyAccount() {
+
+  const [currentUser, setCurrentUser] = useState()
+  useEffect(() => {
+    API.getCurrentUser().then(res => {
+      console.log(res.data);
+      setCurrentUser(res.data.user);
+    })
+  }, [])
+
   return (
     <>
       <h1>My account Page</h1>
       <Container />
       <Button />
+
     </>
   )
+  }
 
-
-
-
-
-
-
-
-
-  export default function MyAccount() {
-  return(
-    
-    
-    <div>  
-    <h1>My account Page</h1>
-   <h1>
-     Welcome, {currentUser.name}; 
-  </h1> 
-  
-      <Container/>
-      <Button/>
-  </div>
-    
-      )
-}
+  export default MyAccount

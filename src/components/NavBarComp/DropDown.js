@@ -1,5 +1,5 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
+import { Link} from "react-router-dom";
 import 'antd/dist/antd.css';
 import '../../index';
 import { Menu, Dropdown } from 'antd';
@@ -34,9 +34,9 @@ class OverlayVisible extends React.Component {
         onVisibleChange={this.handleVisibleChange}
         visible={this.state.visible}
       >
-        <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+      <Link className="ant-dropdown-link" onClick={e => e.preventDefault()}>
           Hover me <DownOutlined />
-        </a>
+        </Link>
       </Dropdown>
     );
   }

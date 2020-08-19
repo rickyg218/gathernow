@@ -1,8 +1,8 @@
-import React, { useState, useEffect }from "react";
-import { Link, useHistory } from "react-router-dom";
+import React, { useState }from "react";
+import { useHistory } from "react-router-dom";
 import { Form, Input, Button, Checkbox } from "antd";
-import { UserOutlined} from '@ant-design/icons';
-import TextArea from "antd/lib/input/TextArea";
+// import { UserOutlined} from '@ant-design/icons';
+// import TextArea from "antd/lib/input/TextArea";
 import API from "../utils/API";
 
 import "../index.css";
@@ -76,7 +76,7 @@ function SignUpForm() {
           />
           </Form.Item>
           <Form.Item>
-            <Input className="site-form-item-icon" maxLength={2} placeholder="age"
+            <Input className="site-form-item-icon" maxLength={5} placeholder="age"
               name="age"
               value={SignUpFormData.age}
               onChange={SignUpInputChange}   
