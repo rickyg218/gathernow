@@ -1,12 +1,14 @@
 import React from "react";
 import SwitchablePicker from '../components/EventCreation/TimeSelector';
+import EventForm from "../components/EventCreation/EventForm";
+import '../index.css';
 
-import '../index';
 
 export default function CreateEvent() {
   return(
     <div>
-      <SwitchablePicker/>
+      <h1>Create an Event Page</h1>
+      <EventForm/>
 </div>
   )
 }
