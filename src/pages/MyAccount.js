@@ -10,5 +10,28 @@ export default function MyAccount() {
       <Button />
     </>
   )
-}
 
+
+
+
+
+
+
+
+
+  export default function MyAccount() {
+  return(
+    
+    
+    <div>  
+    <h1>My account Page</h1>
+   <h1>
+     Welcome, {currentUser.name}; 
+  </h1> 
+  
+      <Container/>
+      <Button/>
+  </div>
+    
+      )
+}

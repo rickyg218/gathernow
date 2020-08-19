@@ -2,8 +2,10 @@ import React from "react";
 import { Form, Input, Button, Checkbox } from "antd";
 import { UserOutlined} from '@ant-design/icons';
 import TextArea from "antd/lib/input/TextArea";
+import SwitchablePicker from './TimeSelector'
 
-import "../index.css";
+import "../../index";
+import { WhiteSpace } from "antd-mobile";
 
 
 
@@ -22,50 +24,44 @@ const styles = {
   return (
 
 
-    <div className="container">
-      <div className="align ">
+    <div className="container align">
         <Form className="site-input-group-wrapper" style={styles.formBorder}>
           <p>* Create your Event </p>
+           <SwitchablePicker/>
+           <WhiteSpace></WhiteSpace>
           <Form.Item>
-            <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Event Name" />
+            <Input name="event_category" placeholder="Event Category"/>
           </Form.Item>
           <Form.Item>
-           <Input className="site-form-item-icon" placeholder="Event Location"/>
+            <Input name="event_name" placeholder="Event Name" />
           </Form.Item>
           <Form.Item>
-          <Input placeholder="name"/>
+           <Input name="event_location" placeholder="Event Location"/>
           </Form.Item>
           <Form.Item>
-            <Input className="site-form-item-icon" maxLength={2} placeholder="age"/>
+           <Input  name="meeting_spot" placeholder="Meeting Spot"/>
           </Form.Item>
           <Form.Item>
-            <Input className="site-form-item-icon" placeholder="city, state"/>
+            <Input maxLength={3} placeholder="Max number of people to attend"/>
           </Form.Item>
           <Form.Item>
-            <TextArea className="site-form-item-icon" rows={4} placeholder="bio"/>
+            <Input maxLength={2} placeholder="Min age requirement"/>
           </Form.Item>
           <Form.Item>
-            <Input className="site-form-item-icon" placeholder="additional info" />
+            <TextArea rows={4} maxLength={200} placeholder="Additional info"/>
           </Form.Item>
-          <Form.Item>
-            <Form.Item name="remember" valuePropName="checked" noStyle>
-              <Checkbox>Remember me</Checkbox>
-            </Form.Item>
-          </Form.Item>
-
           <Form.Item>
             <Button
               type="primary"
               htmlType="submit"
               className="login-form-button"
             >
-              Create Account
+              Post Your Event
             </Button>
           </Form.Item>
         </Form>
-      </div>
     </div>
   );
 };
 
-export default SignUpForm;
+export default EventForm;
