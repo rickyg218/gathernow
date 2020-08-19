@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
 import { DatePicker, TimePicker, Select, Space } from 'antd';
 
 import 'antd/dist/antd.css';

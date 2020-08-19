@@ -5,13 +5,10 @@ import '../index';
 
 export default function CreateAccount() {
   return(
-    // <body className="container">
-    //   <div className="accStyle">
-    //     </div>
-    //   <div>
-    
+<div>
+  <h1>Create your Account Page</h1>
     <SignUpForm/>
-//     </div>
-// </body>
+</div>
+
   )
 }
