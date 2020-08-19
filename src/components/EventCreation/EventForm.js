@@ -1,6 +1,5 @@
 import React from "react";
-import { Form, Input, Button, Checkbox } from "antd";
-import { UserOutlined} from '@ant-design/icons';
+import { Form, Input, Button} from "antd";
 import TextArea from "antd/lib/input/TextArea";
 import SwitchablePicker from './TimeSelector'
 
