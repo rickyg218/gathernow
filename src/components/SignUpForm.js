@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useState, useEffect }from "react";
+import { Link, useHistory } from "react-router-dom";
 import { Form, Input, Button, Checkbox } from "antd";
 import { UserOutlined} from '@ant-design/icons';
 import TextArea from "antd/lib/input/TextArea";
+import API from "../utils/API";
 
 import "../index.css";
 
-
-
-const SignUpForm = () => {
 const styles = {
   formBorder: {
   margin: `${200}px`,
@@ -16,8 +15,44 @@ const styles = {
   borderColor: `black`,
   borderStyle: `solid`,
   color: 'red',
-},
 }
+}
+function SignUpForm() {
+  let history = useHistory();
+  const [SignUpFormData, setSignUpFormData] = useState({
+    first_name: "",
+    last_name: "",
+    age:"",
+    email:"",
+    phoneNumber:"",
+    password:"" 
+
+  })
+  const SignUpInputChange = event => {
+    const { name, value } = event.target;
+    setSignUpFormData({
+      ...SignUpFormData,
+      [name]: value
+    })
+  }
+  const handleSignUpFormSubmit = e => {
+    e.preventDefault();
+    API.createAccount(SignUpFormData).then(res => {
+      console.log(res.data)
+      history.push("/LogIn");
+      setSignUpFormData({
+        first_name: "",
+        last_name: "",
+        age: "",
+        email: "",
+        phoneNumber: "",
+        password: ""  
+      })
+    }).catch(err => {
+      alert("Account Created Failed")
+    })
+  }
+
 
   return (
 
@@ -27,25 +62,47 @@ const styles = {
         <Form className="site-input-group-wrapper" style={styles.formBorder}>
           <p>* Build your user Profile here</p>
           <Form.Item>
-            <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="username" />
+           <Input className="site-form-item-icon" maxLength={15} placeholder="First Name"
+              name="first_name"
+              value={SignUpFormData.first_name}
+              onChange={SignUpInputChange} 
+           />
           </Form.Item>
           <Form.Item>
-           <Input className="site-form-item-icon" maxLength={15} placeholder="password"/>
+            <Input className="site-form-item-icon" maxLength={15} placeholder="Last Name"
+              name="last_name"
+              value={SignUpFormData.last_name}
+              onChange={SignUpInputChange} 
+          />
           </Form.Item>
           <Form.Item>
-          <Input placeholder="name"/>
+            <Input className="site-form-item-icon" maxLength={2} placeholder="age"
+              name="age"
+              value={SignUpFormData.age}
+              onChange={SignUpInputChange}   
+            />
           </Form.Item>
           <Form.Item>
-            <Input className="site-form-item-icon" maxLength={2} placeholder="age"/>
+            <Input className="site-form-item-icon" placeholder="Email"
+              name="email"
+              value={SignUpFormData.email}
+              onChange={SignUpInputChange}  
+            />
           </Form.Item>
           <Form.Item>
-            <Input className="site-form-item-icon" placeholder="city, state"/>
+            <Input className="site-form-item-icon" placeholder="Phone Number"
+              name="phoneNumber"
+              value={SignUpFormData.phoneNumber}
+              onChange={SignUpInputChange}
+            /> 
           </Form.Item>
           <Form.Item>
-            <TextArea className="site-form-item-icon" rows={4} placeholder="bio"/>
-          </Form.Item>
-          <Form.Item>
-            <Input className="site-form-item-icon" placeholder="additional info" />
+            <Input className="site-form-item-icon" placeholder="password"
+              name="password"
+              value={SignUpFormData.password}
+              onChange={SignUpInputChange}  
+            />    
+            
           </Form.Item>
           <Form.Item>
             <Form.Item name="remember" valuePropName="checked" noStyle>
@@ -58,6 +115,7 @@ const styles = {
               type="primary"
               htmlType="submit"
               className="login-form-button"
+              onClick={handleSignUpFormSubmit}
             >
               Create Account
             </Button>
