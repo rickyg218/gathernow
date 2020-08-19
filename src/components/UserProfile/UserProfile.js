@@ -11,7 +11,7 @@ export default class Container extends React.Component{
     <Descriptions.Item label="name"></Descriptions.Item>
     <Descriptions.Item label="age" ></Descriptions.Item>
     <Descriptions.Item label="location"></Descriptions.Item>
-    <Descriptions.Item label="bio" span={4}>empty</Descriptions.Item>
+    <Descriptions.Item label="bio" span={4}></Descriptions.Item>
   </Descriptions>
   // </container>
   );
