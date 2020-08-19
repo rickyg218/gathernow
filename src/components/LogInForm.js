@@ -1,21 +1,61 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { Link, useHistory } from "react-router-dom";
 import { Form, Input, Button, Checkbox } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
+import API from "../utils/API";
+
 
 import "../index.css";
 
-const LogInForm = () => {
-  const styles = {
-    formBorder: {
-      margin: `${200}px`,
-      padding: `${100}px`,
-      border: `${2}px`,
-      borderColor: `black`,
-      borderStyle: `solid`,
-      color: `red`,
-    },
-  };
+const styles = {
+  formBorder: {
+    margin: `${200}px`,
+    padding: `${100}px`,
+    border: `${2}px`,
+    borderColor: `black`,
+    borderStyle: `solid`,
+    color: `red`,
+  }}
+
+function LogInForm() {
+  let history = useHistory();
+  const [loginFormData, setLoginFormData] = useState({
+    email: "",
+    password: ""
+  })
+
+  const [currentUser, setCurrentUser] = useState()
+  useEffect(()=>{
+    API.getCurrentUser().then(res=>{
+      console.log(res);
+      setCurrentUser(res.data.user);
+    })
+  },[])
+
+  const loginInputChange = event => {
+    const { name, value } = event.target;
+    setLoginFormData({
+      ...loginFormData,
+      [name]: value
+    })
+  }
+
+  const handleLoginFormSubmit = e => {
+    e.preventDefault();
+    API.login(loginFormData).then(res => {
+      console.log(res.data)
+      history.push("/MyAccount");
+      setLoginFormData({
+        email: "",
+        password: ""
+      })
+    }).catch(err => {
+      alert("login failed")
+    })
+  }
+
+
+
 
   return (
     <div className="container">
@@ -40,6 +80,9 @@ const LogInForm = () => {
             <Input
               prefix={<UserOutlined className="site-form-item-icon" />}
               placeholder="Email"
+              name = "email"
+              value = {loginFormData.email}
+              onChange={loginInputChange}
             />
           </Form.Item>
           <Form.Item
@@ -55,6 +98,9 @@ const LogInForm = () => {
               prefix={<LockOutlined className="site-form-item-icon" />}
               type="password"
               placeholder="Password"
+              name="password"
+              value={loginFormData.password}
+              onChange={loginInputChange}
             />
           </Form.Item>
           <Form.Item>
@@ -72,6 +118,7 @@ const LogInForm = () => {
               type="primary"
               htmlType="submit"
               className="login-form-button"
+              onClick={handleLoginFormSubmit}
             >
               Log in
             </Button>
