@@ -8,7 +8,7 @@ export default function MyAccount() {
   return(
     <div>
    <h1>
-     Welcome, {currentUser.name}; 
+     {/* Welcome {currentUser.name};  */}
   </h1> 
 </div>
   )
