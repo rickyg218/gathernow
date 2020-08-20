@@ -8,9 +8,11 @@ export default function MyAccount() {
   return(
     <div>
     <h1>My account Page</h1>
-   
-      <Container/>
-      <Card/>
+  
+  
+    <Container/>
+    <Card/>
+     
       {/* <Button/> */}
        </div>
   )

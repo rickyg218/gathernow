@@ -1,7 +1,7 @@
 import React from 'react';
 import 'antd/dist/antd.css';
 import '../../index';
-import { Card, Button } from 'antd';
+import { Card, Button, Row, Col} from 'antd';
 
 
 export default function gridStyle() {
@@ -13,7 +13,9 @@ export default function gridStyle() {
 
 
 return(
-  <Card className="container" name='event_name' style={gridStyle} title="Event Name">
+<Row align='bottom' justify='start'>
+  <Col>
+  <Card name='event_name' style={gridStyle} title="Event Name">
     <Card.Grid name='event_category'style={gridStyle}>content</Card.Grid>
     <Card.Grid name='event_time' style={gridStyle}>content</Card.Grid>
     <Card.Grid name='event_location' >Content</Card.Grid>
@@ -22,5 +24,7 @@ return(
     <Button style={gridStyle}>Chat</Button>
     <Button style={gridStyle}>Delete Event</Button>
   </Card>
+  </Col>
+  </Row>
 )
 }
