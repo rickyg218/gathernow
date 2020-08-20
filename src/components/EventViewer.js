@@ -40,7 +40,7 @@ export default class eventViewer extends React.Component {
   state = {
     value: undefined,
   };
-  onChange = (value: any) => {
+  onChange = (value) => {
     this.setState({
       value,
     });
