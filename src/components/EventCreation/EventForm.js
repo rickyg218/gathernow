@@ -47,7 +47,7 @@ const styles = {
 
     const handleCreateEventFormSubmit = e => {
       e.preventDefault();
-      API.CreateEvent(CreateEventFormData).then(res => {
+      API.CreateEvents(CreateEventFormData).then(res => {
         console.log(res.data)
         history.push("/MyAccount");
         setCreateEventFormData({
@@ -64,7 +64,6 @@ const styles = {
         alert("Post Created Failed")
       })}
     
-
 
 return (
 

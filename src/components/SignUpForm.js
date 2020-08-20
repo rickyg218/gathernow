@@ -2,7 +2,7 @@ import React, { useState }from "react";
 import { useHistory } from "react-router-dom";
 import { Form, Input, Button, Checkbox } from "antd";
 // import { UserOutlined} from '@ant-design/icons';
-// import TextArea from "antd/lib/input/TextArea";
+import TextArea from "antd/lib/input/TextArea";
 import API from "../utils/API";
 
 import "../index.css";
@@ -25,7 +25,8 @@ function SignUpForm() {
     age:"",
     email:"",
     phoneNumber:"",
-    password:"" 
+    password:"",
+    bio:"" 
 
   })
   const SignUpInputChange = event => {
@@ -46,7 +47,8 @@ function SignUpForm() {
         age: "",
         email: "",
         phoneNumber: "",
-        password: ""  
+        password: "",
+        bio:"" 
       })
     }).catch(err => {
       alert("Account Created Failed")
@@ -104,11 +106,22 @@ function SignUpForm() {
             />    
             
           </Form.Item>
+
+          <Form.Item>
+            <TextArea rows={4} maxLength={200} placeholder="User Bio"
+              name="bio"
+              value={SignUpFormData.bio}
+              onChange={SignUpInputChange}
+            />
+          </Form.Item>
+
+
           <Form.Item>
             <Form.Item name="remember" valuePropName="checked" noStyle>
               <Checkbox>Remember me</Checkbox>
             </Form.Item>
           </Form.Item>
+          
 
           <Form.Item>
             <Button
