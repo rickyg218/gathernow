@@ -1,0 +1,16 @@
+/* user profile information */
+.userStyle {
+    width: 20%;
+  }
+
+.bioStyle {
+    height: 100%;
+}
+
+  /* user pic upload */
+
+  .avatar-uploader > .ant-upload {
+    width: 250px;
+    height: 250px;
+
+  }

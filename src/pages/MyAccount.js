@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";<<<<<<< cic-branch
+import React, { useState, useEffect } from "react";
 import Container from '../components/UserProfile/UserProfile';
 import Card from '../components/UserProfile/EventCard.js';
 import '../index';
