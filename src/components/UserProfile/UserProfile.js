@@ -10,7 +10,6 @@ import gridStyle from "./EventCard";
 
  function Container(props) {
 
-
   return (
     <>
     {
@@ -27,5 +26,5 @@ import gridStyle from "./EventCard";
 }
 </>
   );
-
+ }
 export default Container;
