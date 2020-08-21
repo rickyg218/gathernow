@@ -23,8 +23,9 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div>
+     
+        <div> 
+          <BrowserRouter>
           <Navigation/>
           <Switch>
             <Route exact path ="/CreateAccount" component={CreateAccount}/>
@@ -34,8 +35,9 @@ class App extends Component {
             <Route exact path="/CreateEvent"component={CreateEvent}/>
           </Switch>
           <Footer/>
+          </BrowserRouter>
         </div>
-      </BrowserRouter>
+      
     );
   }
 }
