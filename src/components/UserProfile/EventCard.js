@@ -18,7 +18,7 @@ export default function gridStyle() {
 
 return(
  
-<Card>
+<Card className="size">
   <Row align='bottom' justify='center'>
   <Card name='event_name' title="Event Name">
     <Card.Grid  name='event_time'>perfect</Card.Grid>
