@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import Container from '../components/UserProfile/UserProfile';
-import Card from '../components/UserProfile/EventCard.js';
-import '../index';
-// import Button from "../components/UserProfile/notification";
+// import React, { useState, useEffect } from "react";
+// import Container from '../components/UserProfile/UserProfile';
+// import Card from '../components/UserProfile/EventCard.js';
+// import '../index';
+// // import Button from "../components/UserProfile/notification";
 
 
 
@@ -15,21 +15,21 @@ import '../index';
 
 
 
-  export default function MyAccount() {
-  return(
+//   export default function MyAccount() {
+//   return(
 
-    <div>
+//     <div>
 
-    <h1>My account Page</h1>
-   <h1>
-     Welcome, {currentUser.name}; 
-  </h1> 
+//     <h1>My account Page</h1>
+//    <h1>
+//      Welcome, {currentUser.name}; 
+//   </h1> 
   
-      <Container/>
+//       <Container/>
 
-      <Card/>
-      {/* <Button/> */}
-       </div>
-  )
-}
+//       <Card/>
+//       {/* <Button/> */}
+//        </div>
+//   )
+// }
 
