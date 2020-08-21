@@ -9,7 +9,8 @@ const API = {
     },
     getCurrentUser:function(){
         return axios.get("http://localhost:8080/api/users/readsessions",{widthCredentials:true})
-    }
+    },
+    
 }
 
-export default API
+export default API;

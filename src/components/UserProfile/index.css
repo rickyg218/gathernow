@@ -3,9 +3,7 @@
     width: 20%;
   }
 
-.bioStyle {
-    height: 100%;
-}
+
 
   /* user pic upload */
 
@@ -14,3 +12,9 @@
     height: 250px;
 
   }
+
+  /* styles the myaccount container */ 
+.profileStyle {
+  justify-content: space-around;
+ 
+}
