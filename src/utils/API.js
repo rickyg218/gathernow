@@ -8,6 +8,7 @@ const API = {
         return axios.post("http://localhost:8080/api/users/createAccount",userData)
     },
     getCurrentUser:function(){
+
         return axios.get("http://localhost:8080/api/users/readsessions",{withCredentials:true})
     },
    CreateEvents:function(userData){
@@ -15,6 +16,6 @@ const API = {
    } 
 }
 
-export default API
 
+export default API;
 

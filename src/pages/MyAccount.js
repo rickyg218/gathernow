@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import Container from '../components/UserProfile/UserProfile';
 import Card from '../components/UserProfile/EventCard.js';
@@ -26,5 +27,6 @@ function MyAccount() {
     </>
   )
   }
+
 
   export default MyAccount

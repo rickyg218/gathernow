@@ -1,7 +1,10 @@
 import React from "react";
 import "antd/dist/antd.css";
-import "../../index.css";
-import { Descriptions } from "antd";
+import Avatar from "./ProfilePic";
+import { Descriptions, Card, Row, Col, Divider } from "antd";
+import "./index.css";
+import gridStyle from "./EventCard";
+
 
 
 
@@ -25,5 +28,4 @@ import { Descriptions } from "antd";
 </>
   );
 
-}
-export default Container
+export default Container;

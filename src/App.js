@@ -7,6 +7,7 @@ import Navigation from './components/NavBar';
 import Footer from './components/Footer';
 import MyAccount from './pages/MyAccount'
 import CreateEvent from './pages/CreateEvent';
+import Chat from './pages/Chat';
 
 import 'antd-mobile/dist/antd-mobile.css';
 import 'antd-mobile/lib/date-picker/style/css';
@@ -23,8 +24,9 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div>
+     
+        <div> 
+          <BrowserRouter>
           <Navigation/>
           <Switch>
             <Route exact path ="/CreateAccount" component={CreateAccount}/>
@@ -32,10 +34,12 @@ class App extends Component {
             <Route exact path="/LogIn" component={LogIn} />
             <Route exact path="/MyAccount"component={MyAccount}/>
             <Route exact path="/CreateEvent"component={CreateEvent}/>
+            <Route exact path="/Chat" component={Chat}/>
           </Switch>
           <Footer/>
+          </BrowserRouter>
         </div>
-      </BrowserRouter>
+      
     );
   }
 }

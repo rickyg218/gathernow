@@ -2,6 +2,7 @@
 import React from 'react';
 // import { PickerView } from 'antd-mobile';
 import {Select} from 'antd';
+
 import "../index.css";
 
 
@@ -36,7 +37,7 @@ const availEvents = [
 
 const style = { width: 200 };
 
-export default class eventViewer extends React.Component {
+export default class PickerViewer extends React.Component {
   state = {
     value: undefined,
   };
@@ -48,19 +49,13 @@ export default class eventViewer extends React.Component {
   render() {
     return (
 
-      <div className="config-provider">
-<Select style={style} data={availEvents}    className="eventView"
+      <div>
+<PickerView  className="config-provider eventView" style={style} data={availEvents}
         onChange={this.onChange}
         value={this.state.value}
         cascade={false}>
-      {/* <PickerView
-     
-      >
-      </PickerView> */}
+      </PickerView>
 
-
-      
-      </Select>
       </div>
     );
   }
