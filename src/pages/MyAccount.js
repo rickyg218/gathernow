@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Container from '../components/UserProfile/UserProfile';
 import Card from '../components/UserProfile/EventCard.js';
 import '../index';
-import Button from "../components/UserProfile/Card";
+import Button from "../components/UserProfile/EventCard.js";
 import API from "../utils/API"
 function MyAccount() {
 
@@ -20,8 +20,8 @@ function MyAccount() {
      
   {currentUser? <h1>Hello And Welcome {currentUser.first_name}</h1>:null} 
    
-      <Container currentUser={currentUser} />
-      <Button />
+      <Container/>
+      <Button /> 
 
     </>
   )

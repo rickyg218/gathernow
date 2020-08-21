@@ -1,12 +1,7 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 import { Form, Input, Button } from "antd";
 // import { UserOutlined} from '@ant-design/icons';
-=======
-import React from "react";
-import { Form, Input, Button} from "antd";
->>>>>>> dev
 import TextArea from "antd/lib/input/TextArea";
 import SwitchablePicker from './TimeSelector'
 import API from "../../utils/API"

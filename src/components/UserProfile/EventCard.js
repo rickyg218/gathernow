@@ -11,7 +11,7 @@ export default function gridStyle() {
         textAlign: 'center',
      }
 
-
+     
 return(
   <Card className="container" name='event_name' style={gridStyle} title="Event Name">
     <Card.Grid name='event_category'style={gridStyle}>content</Card.Grid>
@@ -24,3 +24,6 @@ return(
   </Card>
 )
 }
+
+
+
