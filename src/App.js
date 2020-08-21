@@ -7,6 +7,7 @@ import Navigation from './components/NavBar';
 import Footer from './components/Footer';
 import MyAccount from './pages/MyAccount'
 import CreateEvent from './pages/CreateEvent';
+import Chat from './pages/Chat';
 
 import 'antd-mobile/dist/antd-mobile.css';
 import 'antd-mobile/lib/date-picker/style/css';
@@ -33,6 +34,7 @@ class App extends Component {
             <Route exact path="/LogIn" component={LogIn} />
             <Route exact path="/MyAccount"component={MyAccount}/>
             <Route exact path="/CreateEvent"component={CreateEvent}/>
+            <Route exact path="/Chat" component={Chat}/>
           </Switch>
           <Footer/>
           </BrowserRouter>

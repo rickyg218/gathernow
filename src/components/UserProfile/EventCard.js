@@ -15,7 +15,7 @@ export default function gridStyle() {
       
      }
 
-
+     
 return(
  
 <Card className="size">
@@ -38,5 +38,9 @@ return(
  
 
   </Card>
-) 
+)
 }
+
+
+
+
