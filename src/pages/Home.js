@@ -9,13 +9,14 @@ import "../index";
 export default function Home() {
     return (
         <div>
-            <h1>Home Page</h1>
-{/* <Select/> */}
-
+            <h1>Welcome to GatherNow</h1>
+            {/* <Select/> */}
+            <p className="selectCategory">Select an event category below to get started:
 {/* <OverlayVisible/> */}
-        <PickerView/>
-        {/* <Cards></Cards> */}
-        
+                <PickerView />
+                {/* <Cards></Cards> */}
+
+            </p>
         </div>
     );
-    }
+}

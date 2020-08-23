@@ -13,15 +13,13 @@ import { WhiteSpace } from "antd-mobile";
 
 const styles = {
   formBorder: {
-  margin: `${200}px`,
-  padding: `${100}px`,
+  padding: `${75}px`,
   border: `${2}px`,
   borderColor: `black`,
   borderStyle: `solid`,
+  borderRadius: `${20}px`,
   color: 'red',
 }}
-
-
 
   function CreateEvent() {
     let history = useHistory();
@@ -61,7 +59,7 @@ const styles = {
           additional_info: "" 
         })
       }).catch(err => {
-        alert("Post Created Failed")
+        alert("Post Create Failed")
       })}
     
 
@@ -70,7 +68,7 @@ return (
 
     <div className="container align">
         <Form className="site-input-group-wrapper" style={styles.formBorder}>
-          <p>* Create your Event </p>
+          <p>* Create your event </p>
            <SwitchablePicker/>
            <WhiteSpace></WhiteSpace>
           <Form.Item>
@@ -102,7 +100,7 @@ return (
            />
           </Form.Item>
           <Form.Item>
-            <Input maxLength={5} placeholder="Max number of people to attend"
+            <Input maxLength={5} placeholder="Maximum number of attendees"
           name="num_of_attendees"
           value={CreateEventFormData.num_of_attendees}
           onChange={CreateEventInputChange}  

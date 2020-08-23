@@ -76,7 +76,7 @@ import '../index';
 export default function CreateAccount() {
   return(
 <div>
-  <h1>Create your Account Page</h1>
+  <h1>Create Your Account</h1>
     <SignUpForm/>
 </div>
 

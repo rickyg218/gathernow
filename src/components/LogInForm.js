@@ -9,11 +9,12 @@ import "../index.css";
 
 const styles = {
   formBorder: {
-    margin: `${200}px`,
+    margin: `${200}px vh`,
     padding: `${100}px`,
     border: `${2}px`,
     borderColor: `black`,
     borderStyle: `solid`,
+    borderRadius: `${20}px`,
     color: `red`,
   }}
 
@@ -67,7 +68,7 @@ function LogInForm() {
             rules={[
               {
                 required: true,
-                message: "Please input your Email!",
+                message: "Please input your email address",
               },
             ]}
           >
@@ -84,7 +85,7 @@ function LogInForm() {
             rules={[
               {
                 required: true,
-                message: "Please input your Password!",
+                message: "Please input your password!",
               },
             ]}
           >
@@ -103,7 +104,7 @@ function LogInForm() {
             </Form.Item>
 
             <Link className="login-form-forgot" href="">
-              Forgot password
+              Forgot password?
             </Link>
           </Form.Item>
 
@@ -116,7 +117,8 @@ function LogInForm() {
             >
               Log in
             </Button>
-            Or <Link href="">register now!</Link>
+            <br></br><br></br>
+            Don't have a GatherNow account? <br></br><Link href="">Register now!</Link>
           </Form.Item>
         </Form>
       </div>

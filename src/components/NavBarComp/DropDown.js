@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link} from "react-router-dom";
+import { NavLink, Link} from "react-router-dom";
 import 'antd/dist/antd.css';
 import '../../index';
 import { Menu, Dropdown } from 'antd';
@@ -7,12 +7,12 @@ import { DownOutlined } from '@ant-design/icons';
 
 class OverlayVisible extends React.Component {
   state = {
-    visible: false,
+    visible: true,
   };
 
   handleMenuClick = e => {
     if (e.key === '3') {
-      this.setState({ visible: false });
+      this.setState({ visible: true });
     }
   };
 
@@ -23,9 +23,13 @@ class OverlayVisible extends React.Component {
   render() {
     const menu = (
       <Menu onClick={this.handleMenuClick}>
-        <Menu.Item key="1">link</Menu.Item>
-        <Menu.Item key="2">Clicking me will not close the menu also.</Menu.Item>
-        <Menu.Item key="3">Clicking me will close the menu.</Menu.Item>
+        <Menu.Item key="2"><NavLink to="Home">Home</NavLink></Menu.Item>
+        <Menu.Item key="1"><NavLink to="/CreateAccount">Create Account</NavLink></Menu.Item>
+        <Menu.Item key="3"><NavLink to="/LogIn">Log In</NavLink></Menu.Item>
+        <Menu.Item key="3"><NavLink to="/MyAccount">My Account</NavLink></Menu.Item>
+        <Menu.Item key="3"><NavLink to="/CreateEvent">Create New Event</NavLink></Menu.Item>
+        <Menu.Item key="3"><NavLink to="/Chat">Chat</NavLink></Menu.Item>
+        <Menu.Item key="3"><NavLink to="/Chat">Log Out</NavLink></Menu.Item>
       </Menu>
     );
     return (
@@ -35,7 +39,7 @@ class OverlayVisible extends React.Component {
         visible={this.state.visible}
       >
       <Link className="ant-dropdown-link" onClick={e => e.preventDefault()}>
-          Hover me <DownOutlined />
+          GatherNow <DownOutlined />
         </Link>
       </Dropdown>
     );

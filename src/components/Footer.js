@@ -6,13 +6,7 @@ const Footer = () => {
    <div className="footer">
        
        <div className="content-inside">
-        Home
-       <br>
-       </br>
-        My Account
-        <br></br>
-    
-        Join an Event
+       &#169; Impromptu Adventures 2020
        </div>
 
    </div>
