@@ -1,5 +1,6 @@
 /* user profile information */
 .userStyle {
+<<<<<<< HEAD
     width: 20%;
   }
 
@@ -8,7 +9,29 @@
   display: "flex";
   justify-content: "center";
   align-items: "center";
+=======
+
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .bioCont {
+    margin-bottom: 165px;
+  }
+
+.size {
+   width: 50%;
 }
+
+.cardCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> dev
+}
+
+
+
 
   /* user pic upload */
 

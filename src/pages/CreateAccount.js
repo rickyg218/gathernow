@@ -1,5 +1,6 @@
 import React from "react";
 import "../index.css";
+<<<<<<< HEAD
 import { Form, Input, Button, Checkbox } from "antd";
 import { List, InputItem } from "antd-mobile";
 import { UserOutlined} from '@ant-design/icons';
@@ -69,9 +70,10 @@ import OverlayVisible from '../components/NavBarComp/DropDown';
 // };
 
 // export default CreateAccount;
+=======
+>>>>>>> dev
 import SignUpForm from "../components/SignUpForm";
 
-import '../index';
 
 export default function CreateAccount() {
   return(
