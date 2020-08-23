@@ -62,7 +62,7 @@ function LogInForm() {
           initialValues={{
             remember: true,
           }}
-        ><p>* Login to your account</p>
+        ><p>* Log in to your account</p>
           <Form.Item
             name="email"
             rules={[
