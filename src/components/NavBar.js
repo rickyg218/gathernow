@@ -1,6 +1,5 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
-import { NavBar, Icon} from "antd-mobile";
+import { NavBar} from "antd-mobile";
 import OverlayVisible from "./../components/NavBarComp/DropDown.js"
 import Logo from './../utils/gnLogo.png'
 import "../index";

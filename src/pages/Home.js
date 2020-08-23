@@ -2,7 +2,6 @@
 import React from 'react';
 import PickerView from '../components/EventViewer';
 // import Space from '../components/EventCreation/TimeSelector';
-import OverlayVisible from '../components/NavBarComp/DropDown';
 import "../index";
 
 
