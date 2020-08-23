@@ -21,7 +21,7 @@ const Navigation = () => {
   return (
     <>
       <NavBar
-        className="container home"
+        className="container logo"
         style={styles.navStyle}
         mode="light"
         color="white"
@@ -29,24 +29,11 @@ const Navigation = () => {
         leftContent={[<OverlayVisible />]}
         rightContent={"GatherNow"}
       >   
-<<<<<<< HEAD
+  
       <img src={Logo} alt="GatherNow logo"/>
        
       </NavBar>
   
-=======
-        <div>
-      <NavLink to="/CreateAccount">CreateAccount</NavLink>,
-        <NavLink to="Home">Home</NavLink>,
-        <NavLink to="/LogIn">LogIn</NavLink>,
-        <NavLink to="/MyAccount">MyAccount</NavLink>,
-        <NavLink to="/CreateEvent">Create New Event</NavLink>,
-        <NavLink to="/Chat">Chat</NavLink>,
-      </div>
-        <h1>GatherNow</h1>
-      </NavBar>
- 
->>>>>>> dev
     </>
   );
 };
