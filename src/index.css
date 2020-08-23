@@ -68,6 +68,11 @@ html, body {
   margin: 0;
 }
 
+.logo img{
+  position: absolute;
+  max-height: 15px;
+
+}
 .content-inside {
   padding: 20px;
   padding-bottom: 50px;

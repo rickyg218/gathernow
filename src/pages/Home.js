@@ -2,7 +2,7 @@
 import React from 'react';
 import PickerView from '../components/EventViewer';
 // import Space from '../components/EventCreation/TimeSelector';
-// import OverlayVisible from '../components/NavBarComp/DropDown';
+import OverlayVisible from '../components/NavBarComp/DropDown';
 import "../index";
 
 
@@ -12,10 +12,8 @@ export default function Home() {
             <h1>Welcome to GatherNow</h1>
             {/* <Select/> */}
             <p className="selectCategory">Select an event category below to get started:
-{/* <OverlayVisible/> */}
                 <PickerView />
                 {/* <Cards></Cards> */}
-
             </p>
         </div>
     );

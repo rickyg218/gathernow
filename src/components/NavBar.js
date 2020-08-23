@@ -1,8 +1,7 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import { NavBar, Icon} from "antd-mobile";
-// import OverlayVisible from "./../components/NavBarComp/DropDown.js"
-
+import OverlayVisible from "./../components/NavBarComp/DropDown.js"
+import Logo from './../utils/gnLogo.png'
 import "../index";
 
 const Navigation = () => {
@@ -21,25 +20,18 @@ const Navigation = () => {
   return (
     <>
       <NavBar
-        className="container"
+        className="container home"
         style={styles.navStyle}
         mode="light"
         color="white"
         fontSize="500px"
-        leftContent={[<Icon key="1" type="ellipsis" />]}
+        leftContent={[<OverlayVisible />]}
         rightContent={"GatherNow"}
       >   
-        <div>
-      <NavLink to="/CreateAccount">CreateAccount</NavLink>,
-        <NavLink to="Home">Home</NavLink>,
-        <NavLink to="/LogIn">LogIn</NavLink>,
-        <NavLink to="/MyAccount">MyAccount</NavLink>,
-        <NavLink to="/CreateEvent">Create New Event</NavLink>,
-        <NavLink to="/Chat">Chat</NavLink>,
-      </div>
-        <h1>GatherNow</h1>
+      <img src={Logo} alt="GatherNow logo"/>
+       
       </NavBar>
- 
+  
     </>
   );
 };

@@ -4,7 +4,6 @@ import EventCard from "./../components/UserProfile/EventCard";
 import "../index";
 import API from "../utils/API"
 
-
 function MyAccount() {
   const [currentUser, setCurrentUser] = useState({});
   useEffect(() => {
