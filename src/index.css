@@ -95,15 +95,17 @@ html, body {
 /* event viewer styling */
 
 .eventView {
-  position: absolute;
-  background-color: red;
+  background-color: rgb(23, 91, 131);
   top: 10%;
   left: 0;
   right: 0;
   z-index: 99;
+  width: 50%;
+  align-content: center;
 }
-.code-box-demo .config-provider h3 {
+.code-box-demo .config-provider {
   font-size: inherit;
   margin: 16px 0 8px 0;
+
 }
 

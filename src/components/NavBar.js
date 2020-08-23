@@ -1,5 +1,9 @@
 import React from "react";
+<<<<<<< HEAD
 import { NavBar} from "antd-mobile";
+=======
+import {NavLink} from "react-router-dom";
+>>>>>>> e78de4186ab6ba84e63291ee04cb28c3d3b0aaf9
 import OverlayVisible from "./../components/NavBarComp/DropDown.js"
 import Logo from './../utils/logo-transparent-notext.png'
 import "../index";
