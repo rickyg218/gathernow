@@ -6,9 +6,9 @@ import { WhiteSpace } from "antd-mobile";
 
 export default function EventCard() {
   return (
-    <div className="cardCenter" align="middle" justify="end">
-       <Card className="size">
-        <Row justify="start">
+    <div className="cardCenter" >
+       <Card className="size" align="top" justify="start">
+        <Row justify="end">
           <Col >
           <Card className="cardCenter size" name="event_name" title="Event Name" >
               <Col >
@@ -35,6 +35,11 @@ export default function EventCard() {
           </Col>
           </Row>
       </Card>
+      <Row>
+        <Col>
+        <h1>You have no events</h1>
+        </Col>
+      </Row>
     </div>
   )
 }
