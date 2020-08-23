@@ -1,30 +1,59 @@
 import React from "react";
-import "antd/dist/antd.css";
 import Avatar from "./ProfilePic";
-import { Descriptions, Card, Row, Col, Divider } from "antd";
+import { Descriptions, Card, Row, Col} from "antd";
 import "./index.css";
-import gridStyle from "./EventCard";
 
 
 
 
-function Container(props) {
 
+
+
+function UserInfo(props) {
   return (
     <>
-      {
-        props.currentUser ?
-          <container>
-            <Descriptions title="User Information" layout="vertical">
-              < Descriptions.Item label="Name" >{props.currentUser.first_name}</Descriptions.Item >
-              <Descriptions.Item label="Age" >{props.currentUser.age}</Descriptions.Item>
-              <Descriptions.Item label="Email">{props.currentUser.email}</Descriptions.Item>
-              <Descriptions.Item label="Bio" span={4}>{props.currentUser.bio}</Descriptions.Item>
-            </Descriptions >
-          </container>
-          : null
-      }
+
+      <div className="cardCenter" >
+        {/* {props.currentUser ? ( */}
+          <Card className="size">
+            <Row justify="start" align="top">
+              <Col  className="userStyle">
+                <Avatar/>
+                <Row>
+                <Card >
+                  <Descriptions className="userStyle">
+                  <Descriptions.Item label="Name">
+                    {/* {props.currentUser.first_name} */}
+                  </Descriptions.Item>
+                  </Descriptions>
+                  </Card>
+                </Row>
+               </Col>
+                <Col className="userStyle">
+                  <Card>
+                    <Descriptions>
+                  <Descriptions.Item  label="Age" span={5}>
+                    {/* {props.currentUser.age} */}
+                  </Descriptions.Item>
+                  <Descriptions.Item label="Email" >
+                    {/* {props.currentUser.email} */}
+                  </Descriptions.Item>
+                  </Descriptions>
+                </Card>
+                <Card>
+                  <Descriptions className='bioCont'>
+                    <Descriptions.Item label="Bio" >
+                      {/* {props.currentUser.bio} */}
+                    </Descriptions.Item>
+                  </Descriptions>
+                </Card>
+              </Col>
+            </Row>
+          </Card>
+        {/* ) : null} */}
+        </div>
     </>
   );
 }
-export default Container;
+export default UserInfo;
+
