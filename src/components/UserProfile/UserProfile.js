@@ -2,7 +2,7 @@ import React from "react";
 import Avatar from "./ProfilePic";
 import { Descriptions, Card, Row, Col} from "antd";
 import "./index.css";
-import EventCard from "./EventCard";
+
 
 
 
@@ -47,11 +47,6 @@ function UserInfo(props) {
                 </Card>
               </Col>
             </Row>
-            <div>
-          <Row>
-          <EventCard/>
-          </Row>
-          </div>
           </Card>
       
         ) : null};

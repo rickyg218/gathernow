@@ -17,13 +17,11 @@ function MyAccount() {
   return (
     <>
   
-      <div>
+  <UserInfo/>
         <h1>Welcome{currentUser.first_name}</h1>
- </div>
-      <UserInfo/>
-     <EventCard/>
 
-      {currentUser? <h1>Hello And Welcome {currentUser.first_name}</h1>:null} 
+      {currentUser? <h1>Hello And Welcome {currentUser.first_name}</h1>:null}
+      <EventCard/>
     </>
   );
 }

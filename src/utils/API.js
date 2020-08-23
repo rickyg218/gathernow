@@ -13,7 +13,7 @@ const API = {
     },
    CreateEvents:function(userData){
        return axios.post("http://localhost:8080/api/events/CreateEvents", userData )
-   } 
+   },
 }
 
 
