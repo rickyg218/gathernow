@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import UserInfo from "./../components/UserProfile/UserProfile";
 import EventCard from "./../components/UserProfile/EventCard";
 import "../index";
 import API from "../utils/API"
+import UserInfo from "../components/UserProfile/UserProfile";
 
 function MyAccount() {
   const [currentUser, setCurrentUser] = useState({});
@@ -18,8 +18,8 @@ function MyAccount() {
      
   {currentUser? <h1>Welcome {currentUser.first_name}! Here are your events coming up:</h1>:null} 
    
-      <Container currentUser={currentUser}/>
-      <Button />
+      <UserInfo currentUser={currentUser}/>
+      {/* <Button /> */}
 
      
       <EventCard/>
