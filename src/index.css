@@ -70,8 +70,8 @@ html, body {
 
 .logo img{
   position: absolute;
-  max-height: 15px;
-
+  justify-content: flex-end;
+  max-height: 125px;
 }
 .content-inside {
   padding: 20px;

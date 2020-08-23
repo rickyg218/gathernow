@@ -1,6 +1,16 @@
 /* user profile information */
 .userStyle {
 
+    width: 20%;
+  }
+
+.size {
+  width: 50%;
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+
+
     width: 50%;
     margin-bottom: 30px;
   }
@@ -17,7 +27,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 

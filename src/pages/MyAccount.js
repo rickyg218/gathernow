@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import UserInfo from "./../components/UserProfile/UserProfile";
 import EventCard from "./../components/UserProfile/EventCard";
 import "../index";
 import API from "../utils/API"
+import UserInfo from "../components/UserProfile/UserProfile";
 
 function MyAccount() {
   const [currentUser, setCurrentUser] = useState({});

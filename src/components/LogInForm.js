@@ -62,7 +62,7 @@ function LogInForm() {
           initialValues={{
             remember: true,
           }}
-        ><p>* Login to your account</p>
+        ><p>* Log in to your account</p>
           <Form.Item
             name="email"
             rules={[
@@ -85,7 +85,7 @@ function LogInForm() {
             rules={[
               {
                 required: true,
-                message: "Please input your password!",
+                message: "Please input your password",
               },
             ]}
           >
