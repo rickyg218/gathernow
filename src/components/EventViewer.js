@@ -1,7 +1,6 @@
 
 import React from 'react';
  import { PickerView } from 'antd-mobile';
-import {Select} from 'antd';
 
 import "../index.css";
 
@@ -29,6 +28,7 @@ const availEvents = [
       label: 'Urban',
       value: 'drinking',
     },
+
     {
       label: 'Aquatic',
       value: 'water',
@@ -37,9 +37,6 @@ const availEvents = [
       label: 'Virtual',
       value: 'virtual',
     },
-    
-  
-    
   ],
 ];
 
