@@ -26,5 +26,9 @@ import gridStyle from "./EventCard";
 }
 </>
   );
- }
+
+
+ 
+}
+
 export default Container;

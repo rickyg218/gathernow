@@ -7,7 +7,7 @@ import { WhiteSpace } from 'antd-mobile';
 
 
 
-export default function gridStyle() {
+export default function gridStyle(props) {
  
  const gridStyle = {
      width: '{50}%',
@@ -21,9 +21,9 @@ return(
 <Card>
   <Row align='bottom' justify='center'>
   <Card name='event_name' title="Event Name">
-    <Card.Grid  name='event_time'>perfect</Card.Grid>
-    <Card.Grid name='event_location' type='vertical'>ok</Card.Grid>
-    <Card.Grid name='meeting_spot' type='vertical'>wow</Card.Grid>
+    <Card.Grid  name='event_time'>{props.event_time}</Card.Grid>
+    <Card.Grid name='event_location' type='vertical'>{props.event_location}</Card.Grid>
+    <Card.Grid name='meeting_spot' type='vertical'>{props.meeting_spot}</Card.Grid>
      
  <Divider></Divider>
     <Button style={gridStyle}>Edit Event</Button>
@@ -40,6 +40,8 @@ return(
   </Card>
 )
 }
+
+
 
 
 
