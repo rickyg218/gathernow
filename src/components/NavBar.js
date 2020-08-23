@@ -26,7 +26,7 @@ const Navigation = () => {
         mode="light"
         color="white"
         fontSize="500px"
-        leftContent={[<OverlayVisible key="1" type="ellipsis" />]}
+        leftContent={[<Icon key="1" type="ellipsis" />]}
         rightContent={"GatherNow"}
       >   
       </NavBar>
