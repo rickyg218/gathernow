@@ -8,9 +8,11 @@ import "./index.css";
 
 
 
+
 function UserInfo(props) {
   return (
     <>
+
       <div className="cardCenter" >
         {/* {props.currentUser ? ( */}
           <Card className="size">
@@ -54,3 +56,4 @@ function UserInfo(props) {
   );
 }
 export default UserInfo;
+

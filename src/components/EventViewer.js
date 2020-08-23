@@ -13,26 +13,35 @@ import "../index.css";
 const availEvents = [
   [
     {
-      label: 'hiking',
-      value: 'hiking',
+      label: 'Active',
+      value: 'active',
     },
     {
-      label: 'kayaking',
-      value: 'kayaking',
+      label: 'Sedentary',
+      value: 'sedentary',
     },
     {
-      label: 'biking',
-      value: 'biking',
+      label: 'Social',
+      value: 'social',
     },
     {
-      label: 'drinking',
+      label: 'Urban',
       value: 'drinking',
+    },
+
+    {
+      label: 'Aquatic',
+      value: 'water',
+    },
+    {
+      label: 'Virtual',
+      value: 'virtual',
     },
   ],
 ];
 
 
-const style = { width: 200 };
+const style = { width: 10 };
 
 export default class PickerViewer extends React.Component {
   state = {
@@ -57,7 +66,3 @@ export default class PickerViewer extends React.Component {
     );
   }
 }
-
-
-
-

@@ -11,10 +11,11 @@ import "../index.css";
 
 const styles = {
   formBorder: {
-  margin: `${200}px`,
-  padding: `${100}px`,
+  margin: `${200}px vh`,
+  padding: `${50}px`,
   border: `${2}px`,
   borderColor: `black`,
+  borderRadius: `${20}px`,
   borderStyle: `solid`,
   color: 'red',
 }
@@ -53,7 +54,7 @@ function SignUpForm() {
         bio:"" 
       })
     }).catch(err => {
-      alert("Account Created Failed")
+      alert("Account Creation Failed")
     })
   }
 
@@ -64,7 +65,7 @@ function SignUpForm() {
     <div className="container">
       <div className="align ">
         <Form className="site-input-group-wrapper" style={styles.formBorder}>
-          <p>* Build your user Profile here</p>
+          <p>* Enter your user information below</p>
           <Form.Item>
            <Input className="site-form-item-icon" maxLength={15} placeholder="First Name"
               name="first_name"
@@ -80,7 +81,7 @@ function SignUpForm() {
           />
           </Form.Item>
           <Form.Item>
-            <Input className="site-form-item-icon" maxLength={5} placeholder="age"
+            <Input className="site-form-item-icon" maxLength={5} placeholder="Age"
               name="age"
               value={SignUpFormData.age}
               onChange={SignUpInputChange}   
@@ -94,14 +95,14 @@ function SignUpForm() {
             />
           </Form.Item>
           <Form.Item>
-            <Input className="site-form-item-icon" placeholder="Phone Number"
+            <Input className="site-form-item-icon" placeholder="Phone Number (no dashes)"
               name="phoneNumber"
               value={SignUpFormData.phoneNumber}
               onChange={SignUpInputChange}
             /> 
           </Form.Item>
           <Form.Item>
-            <Input className="site-form-item-icon" placeholder="password"
+            <Input className="site-form-item-icon" placeholder="Password"
               name="password"
               value={SignUpFormData.password}
               onChange={SignUpInputChange}  

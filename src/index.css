@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
 }
 
 code {
@@ -18,13 +19,21 @@ width: 700px;
 
 }
 
+h1 {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p {
+  text-align: center;
+  font-size: 14px;
+}
 /* login form styling from ant */
 .form-border {
-  margin: 200px;
+  margin: 20px;
   padding: 100px;
   border: 2px 2px 2px 2px;
   border-color: black;
-  border-style: solid;  
+  border-style: dashed;  
  
 }
 
@@ -67,12 +76,13 @@ html, body {
   position: -webkit-sticky;
   position: sticky;
   bottom: 0px;
- position: fixed;
+  position: fixed;
   width: 100%;
-  background-color: blueviolet;
+  background-color: #4b5ba2;
   color: white;
   text-align: center;
-  height: 100px;
+  height: 75px;
+  border-top: 20px black;
   margin-top: 10px;
   
 }
@@ -81,7 +91,7 @@ html, body {
 
 .eventView {
   position: absolute;
-  background-color: DodgerBlue;
+  background-color: red;
   top: 10%;
   left: 0;
   right: 0;

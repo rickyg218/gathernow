@@ -1,6 +1,7 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import { NavBar, Icon} from "antd-mobile";
+import OverlayVisible from "./../components/NavBarComp/DropDown.js"
 
 import "../index";
 
@@ -9,9 +10,11 @@ const Navigation = () => {
     navStyle: {
       display: "flex",
       justifyContent: "space-around",
-      color: "White",
-      backgroundColor: "blueviolet",
+      color: "salmon",
+      fontSize: "500px",
+      backgroundColor: "#4b5ba2",
       padding: `${50}px`,
+      align: "left"
     },
   };
 
@@ -21,9 +24,12 @@ const Navigation = () => {
         className="container"
         style={styles.navStyle}
         mode="light"
+        color="white"
+        fontSize="500px"
         leftContent={[<Icon key="1" type="ellipsis" />]}
-        rightContent={"home"}
-      >    <div>
+        rightContent={"GatherNow"}
+      >   
+        <div>
       <NavLink to="/CreateAccount">CreateAccount</NavLink>,
         <NavLink to="Home">Home</NavLink>,
         <NavLink to="/LogIn">LogIn</NavLink>,
@@ -33,8 +39,7 @@ const Navigation = () => {
       </div>
         <h1>GatherNow</h1>
       </NavBar>
-  
-      <div></div>
+ 
     </>
   );
 };
