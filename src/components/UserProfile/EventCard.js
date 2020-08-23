@@ -1,46 +1,40 @@
-import React from 'react';
-import 'antd/dist/antd.css';
-import '../../index';
-import { Card, Button, Row, Divider} from 'antd';
-import { WhiteSpace } from 'antd-mobile';
+import React from "react";
+import "antd/dist/antd.css";
+import "./index.css";
+import { Card, Button, Col, Space, Divider, Descriptions, Row } from "antd";
+import { WhiteSpace } from "antd-mobile";
 
-
-
-
-export default function gridStyle() {
- 
- const gridStyle = {
-     width: '{50}%',
-        textAlign: 'center',
-      
-     }
-
-     
-return(
- 
-<Card className="size">
-  <Row align='bottom' justify='center'>
-  <Card name='event_name' title="Event Name">
-    <Card.Grid  name='event_time'>perfect</Card.Grid>
-    <Card.Grid name='event_location' type='vertical'>ok</Card.Grid>
-    <Card.Grid name='meeting_spot' type='vertical'>wow</Card.Grid>
-     
- <Divider></Divider>
-    <Button style={gridStyle}>Edit Event</Button>
-    <Button style={gridStyle}>Chat</Button>
-    <Button style={gridStyle}>Delete Event</Button>
-   <WhiteSpace/>  
- 
-
-  </Card>
-  </Row>
-
- 
-
-  </Card>
-)
+export default function EventCard() {
+  return (
+    <div className="cardCenter" align="middle" justify="end">
+       <Card className="size">
+        <Row justify="start">
+          <Col >
+          <Card className="cardCenter size" name="event_name" title="Event Name" >
+              <Col >
+                <Row>
+            <Space>
+             <Descriptions>
+            <Descriptions.Item span={5} name="event_time">Time:</Descriptions.Item>
+            <Descriptions.Item span={5} name="event_location" >Location:
+            </Descriptions.Item>
+            <Descriptions.Item span={5} name="meeting_spot" >Meet Spot:
+            </Descriptions.Item>
+            </Descriptions>
+            </Space>
+            </Row>
+           </Col>
+           <Divider/>
+              <Space>
+            <Button>Edit Event</Button>
+            <Button>Chat</Button>
+            <Button>Delete Event</Button>
+            </Space>
+            <WhiteSpace />
+          </Card>
+          </Col>
+          </Row>
+      </Card>
+    </div>
+  )
 }
-
-
-
-
