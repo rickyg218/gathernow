@@ -1,10 +1,10 @@
 /* user profile information */
 .userStyle {
-    width: 20% vh;
+    width: 20%;
   }
 
 .size {
-  width: 50% vh;
+  width: 50%;
   display: "flex";
   justify-content: "center";
   align-items: "center";

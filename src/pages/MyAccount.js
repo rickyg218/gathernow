@@ -5,7 +5,7 @@ import Card from './../components/UserProfile/EventCard.js';
 import '../index';
 import Button from "../components/UserProfile/EventCard.js";
 import API from "../utils/API"
-import OverlayVisible from "./../components/NavBarComp/DropDown.js";
+import OverlayVisible from '../components/NavBarComp/DropDown';
 function MyAccount() {
 
   const [currentUser, setCurrentUser] = useState({})

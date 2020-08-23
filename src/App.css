@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: salmon;
+  color: white;
 }
 
 .App-link {
@@ -40,6 +40,6 @@
   }
 }
 .Logo {
-  background-image: "./../gnLogo.png";
+  background-image: "../gnLogo.png";
 }
 @import '~antd/dist/antd.css';
