@@ -85,7 +85,7 @@ function LogInForm() {
             rules={[
               {
                 required: true,
-                message: "Please input your password!",
+                message: "Please input your password",
               },
             ]}
           >
