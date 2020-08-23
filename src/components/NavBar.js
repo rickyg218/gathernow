@@ -29,7 +29,10 @@ const Navigation = () => {
         leftContent={[<OverlayVisible />]}
         rightContent={"GatherNow"}
       >   
+<<<<<<< HEAD
   
+=======
+>>>>>>> dev
       <img src={Logo} alt="GatherNow logo"/>
        
       </NavBar>
