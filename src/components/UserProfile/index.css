@@ -1,7 +1,6 @@
 /* user profile information */
 .userStyle {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     width: 20%;
   }
 
@@ -10,9 +9,7 @@
   display: "flex";
   justify-content: "center";
   align-items: "center";
-=======
-=======
->>>>>>> dev
+
 
     width: 50%;
     margin-bottom: 30px;
@@ -30,11 +27,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
->>>>>>> dev
-=======
-
->>>>>>> dev
 }
 
 

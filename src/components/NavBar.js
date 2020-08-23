@@ -2,7 +2,7 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import { NavBar, Icon} from "antd-mobile";
 import OverlayVisible from "./../components/NavBarComp/DropDown.js"
-import Logo from './../utils/gnLogo.png'
+import Logo from './../utils/logo-transparent-notext.png'
 import "../index";
 
 const Navigation = () => {
@@ -27,13 +27,8 @@ const Navigation = () => {
         color="white"
         fontSize="500px"
         leftContent={[<OverlayVisible />]}
-        rightContent={"GatherNow"}
+        rightContent={<img src={Logo} alt="GatherNow logo"></img>}
       >   
-<<<<<<< HEAD
-  
-=======
->>>>>>> dev
-      <img src={Logo} alt="GatherNow logo"/>
        
       </NavBar>
   
