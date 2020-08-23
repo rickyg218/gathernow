@@ -19,8 +19,8 @@ function MyAccount() {
      
   {currentUser? <h1>Welcome {currentUser.first_name}! Here are your events coming up:</h1>:null} 
    
-      <Container currentUser={currentUser}/>
-      <Button />
+      <UserInfo currentUser={currentUser}/>
+      {/* <Button /> */}
 
      
       <EventCard/>

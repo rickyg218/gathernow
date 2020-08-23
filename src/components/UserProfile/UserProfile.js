@@ -14,43 +14,47 @@ function UserInfo(props) {
     <>
 
       <div className="cardCenter" >
-        {/* {props.currentUser ? ( */}
           <Card className="size">
             <Row justify="start" align="top">
               <Col  className="userStyle">
                 <Avatar/>
                 <Row>
+            {props.currentUser ?
                 <Card >
                   <Descriptions className="userStyle">
                   <Descriptions.Item label="Name">
-                    {/* {props.currentUser.first_name} */}
+                    {props.currentUser.first_name}
                   </Descriptions.Item>
                   </Descriptions>
                   </Card>
+:null }
                 </Row>
                </Col>
                 <Col className="userStyle">
+                  {props.currentUser ?
                   <Card>
                     <Descriptions>
                   <Descriptions.Item  label="Age" span={5}>
-                    {/* {props.currentUser.age} */}
+                   {props.currentUser.age}
                   </Descriptions.Item>
                   <Descriptions.Item label="Email" >
                     {/* {props.currentUser.email} */}
                   </Descriptions.Item>
                   </Descriptions>
                 </Card>
+                :null}
+                { props.currentUser ?
                 <Card>
                   <Descriptions className='bioCont'>
                     <Descriptions.Item label="Bio" >
-                      {/* {props.currentUser.bio} */}
+                      {props.currentUser.bio}
                     </Descriptions.Item>
                   </Descriptions>
                 </Card>
+                :null}
               </Col>
             </Row>
           </Card>
-        {/* ) : null} */}
         </div>
     </>
   );
