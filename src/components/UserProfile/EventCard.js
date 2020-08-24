@@ -10,14 +10,14 @@ import { WhiteSpace } from 'antd-mobile';
 
 export default function EventCard() {
 
-   const [UserEvent, setUserEvent] = useState({})
+   const [userEvent, setUserEvent] = useState([])
    useEffect(() => {
       API.getUserEvent().then(res => {
          setUserEvent(res.data);
 
          console.log(res.data);
       })
-   })
+   }, [])
  
  const gridStyle = {
      width: '{50}%',
@@ -25,15 +25,59 @@ export default function EventCard() {
       
      }
 
+   const renderEvents = () => {
+      return (
+         userEvent.map((event) => {
+            return(
+               <div>
+               <Card.Grid  name='event_time'>{event.event_category}</Card.Grid>
+               <Card.Grid name='event_location' type='vertical'>{event.event_location}</Card.Grid>
+               <Card.Grid name='meeting_spot' type='vertical'>{event.meeting_spot}</Card.Grid> 
+               </div>
+            )
+
+
+         })
+      )
+   
+   }
+
      
 return(
 // UserEvent.map(e =>{
 //    e.event_category
 // }
- 
+
 <Card>
-  <Row align='bottom' justify='center'>
+   {userEvent.map(event =>{
+      return(
+      <Row align='bottom' justify='center'>
+         <Card name='event_name'>{event.event_category}
+
+            <div>
+               <Card.Grid name='event_time'>{event.event_category}</Card.Grid>
+               <Card.Grid name='event_location' type='vertical'>{event.event_location}</Card.Grid>
+               <Card.Grid name='meeting_spot' type='vertical'>{event.meeting_spot}</Card.Grid>
+            </div>
+
+            <Divider></Divider>
+            <Button style={gridStyle}>Edit Event</Button>
+            <Button style={gridStyle}>Chat</Button>
+            <Button style={gridStyle}>Delete Event</Button>
+            <WhiteSpace />
+
+
+         </Card>
+      </Row>
+      )
+
+   })}
+  {/* <Row align='bottom' justify='center'>
   <Card name='event_name' title="Event Name">
+
+   {renderEvents()} */}
+
+
          {/* {UserEvent.map(e =>{
            <h1> e.event_category</h1>
          })}  */}
@@ -41,7 +85,7 @@ return(
     {/* <Card.Grid name='event_location' type='vertical'>{event_location}</Card.Grid> */}
     {/* <Card.Grid name='meeting_spot' type='vertical'>{meeting_spot}</Card.Grid> */}
      
- <Divider></Divider>
+ {/* <Divider></Divider>
     <Button style={gridStyle}>Edit Event</Button>
     <Button style={gridStyle}>Chat</Button>
     <Button style={gridStyle}>Delete Event</Button>
@@ -49,7 +93,7 @@ return(
  
 
   </Card>
-  </Row>
+  </Row> */}
 
  
 
