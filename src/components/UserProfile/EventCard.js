@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import API from "../../utils/API"
 import 'antd/dist/antd.css';
 import '../../index';
 import { Card, Button, Row, Divider} from 'antd';
@@ -7,7 +8,16 @@ import { WhiteSpace } from 'antd-mobile';
 
 
 
-export default function gridStyle(props) {
+export default function EventCard() {
+
+   const [UserEvent, setUserEvent] = useState({})
+   useEffect(() => {
+      API.getUserEvent().then(res => {
+         setUserEvent(res.data);
+
+         console.log(res.data);
+      })
+   })
  
  const gridStyle = {
      width: '{50}%',
@@ -17,13 +27,19 @@ export default function gridStyle(props) {
 
      
 return(
+// UserEvent.map(e =>{
+//    e.event_category
+// }
  
 <Card>
   <Row align='bottom' justify='center'>
   <Card name='event_name' title="Event Name">
-    <Card.Grid  name='event_time'>{props.event_time}</Card.Grid>
-    <Card.Grid name='event_location' type='vertical'>{props.event_location}</Card.Grid>
-    <Card.Grid name='meeting_spot' type='vertical'>{props.meeting_spot}</Card.Grid>
+         {/* {UserEvent.map(e =>{
+           <h1> e.event_category</h1>
+         })}  */}
+    {/* <Card.Grid  name='event_time'>{event_category}</Card.Grid> */}
+    {/* <Card.Grid name='event_location' type='vertical'>{event_location}</Card.Grid> */}
+    {/* <Card.Grid name='meeting_spot' type='vertical'>{meeting_spot}</Card.Grid> */}
      
  <Divider></Divider>
     <Button style={gridStyle}>Edit Event</Button>
