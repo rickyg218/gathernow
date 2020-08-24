@@ -1,5 +1,5 @@
 
-import React, { useState }from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Form, Input, Button, Checkbox } from "antd";
 // import { UserOutlined} from '@ant-design/icons';
@@ -11,25 +11,25 @@ import "../index.css";
 
 const styles = {
   formBorder: {
-  margin: `${200}px vh`,
-  padding: `${50}px`,
-  border: `${2}px`,
-  borderColor: `black`,
-  borderRadius: `${20}px`,
-  borderStyle: `solid`,
-  color: 'red',
-}
+    margin: `${200}px vh`,
+    padding: `${50}px`,
+    border: `${2}px`,
+    borderColor: `black`,
+    borderRadius: `${20}px`,
+    borderStyle: `solid`,
+    color: 'red',
+  }
 }
 function SignUpForm() {
   let history = useHistory();
   const [SignUpFormData, setSignUpFormData] = useState({
     first_name: "",
     last_name: "",
-    age:"",
-    email:"",
-    phoneNumber:"",
-    password:"",
-    bio:"" 
+    age: "",
+    email: "",
+    phoneNumber: "",
+    password: "",
+    bio: ""
 
   })
   const SignUpInputChange = event => {
@@ -51,7 +51,7 @@ function SignUpForm() {
         email: "",
         phoneNumber: "",
         password: "",
-        bio:"" 
+        bio: ""
       })
     }).catch(err => {
       alert("Account Creation Failed")
@@ -67,31 +67,31 @@ function SignUpForm() {
         <Form className="site-input-group-wrapper" style={styles.formBorder}>
           <p>* Enter your user information below</p>
           <Form.Item>
-           <Input className="site-form-item-icon" maxLength={15} placeholder="First Name"
+            <Input className="site-form-item-icon" maxLength={15} placeholder="First Name"
               name="first_name"
               value={SignUpFormData.first_name}
-              onChange={SignUpInputChange} 
-           />
+              onChange={SignUpInputChange}
+            />
           </Form.Item>
           <Form.Item>
             <Input className="site-form-item-icon" maxLength={15} placeholder="Last Name"
               name="last_name"
               value={SignUpFormData.last_name}
-              onChange={SignUpInputChange} 
-          />
+              onChange={SignUpInputChange}
+            />
           </Form.Item>
           <Form.Item>
             <Input className="site-form-item-icon" maxLength={5} placeholder="Age"
               name="age"
               value={SignUpFormData.age}
-              onChange={SignUpInputChange}   
+              onChange={SignUpInputChange}
             />
           </Form.Item>
           <Form.Item>
             <Input className="site-form-item-icon" placeholder="Email"
               name="email"
               value={SignUpFormData.email}
-              onChange={SignUpInputChange}  
+              onChange={SignUpInputChange}
             />
           </Form.Item>
           <Form.Item>
@@ -99,15 +99,15 @@ function SignUpForm() {
               name="phoneNumber"
               value={SignUpFormData.phoneNumber}
               onChange={SignUpInputChange}
-            /> 
+            />
           </Form.Item>
           <Form.Item>
             <Input className="site-form-item-icon" placeholder="Password"
               name="password"
               value={SignUpFormData.password}
-              onChange={SignUpInputChange}  
-            />    
-            
+              onChange={SignUpInputChange}
+            />
+
           </Form.Item>
 
           <Form.Item>
@@ -124,7 +124,7 @@ function SignUpForm() {
               <Checkbox>Remember me</Checkbox>
             </Form.Item>
           </Form.Item>
-          
+
 
           <Form.Item>
             <Button

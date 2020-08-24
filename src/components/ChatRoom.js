@@ -189,7 +189,7 @@ export default class ChatRoom extends Component {
                                     messages.map((item, index) => {
 
                                         return this.renderMessage(item.message, (item.sender === myId) ? 'sent' : 'receieved', index)
-                                        
+
                                     })
                                 }
 

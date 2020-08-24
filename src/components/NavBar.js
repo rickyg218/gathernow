@@ -1,11 +1,8 @@
 import React from "react";
-<<<<<<< HEAD
-import { NavBar} from "antd-mobile";
-=======
-import {NavLink} from "react-router-dom";
->>>>>>> e78de4186ab6ba84e63291ee04cb28c3d3b0aaf9
+// import {NavLink} from "react-router-dom";
+import { NavBar } from "antd-mobile";
 import OverlayVisible from "./../components/NavBarComp/DropDown.js"
-import Logo from './../utils/logo-transparent-notext.png'
+import Logo from './../utils/Images/logo-transparent-notext.png'
 import "../index";
 
 const Navigation = () => {
@@ -24,17 +21,16 @@ const Navigation = () => {
   return (
     <>
       <NavBar
-        className="container logo"
+        className="container nav-logo"
         style={styles.navStyle}
-        mode="light"
-        color="white"
+        mode="dark"
         fontSize="500px"
         leftContent={[<OverlayVisible />]}
         rightContent={<img src={Logo} alt="GatherNow logo"></img>}
-      >   
-       
+      >
+
       </NavBar>
-  
+
     </>
   );
 };

@@ -1,24 +1,30 @@
 
 import React from 'react';
- import { PickerView } from 'antd-mobile';
+import { PickerView } from 'antd-mobile';
 
 import "../index.css";
-
-
-
-
-
-
 
 const availEvents = [
   [
     {
-      label: 'Active',
+      label: 'Active', 
       value: 'active',
     },
     {
-      label: 'Sedentary',
+      label: 'Aquatic',
+      value: 'water',
+    },
+    {
+      label: 'Indoors',
       value: 'sedentary',
+    },
+    {
+      label: 'Sporting Events',
+      value: 'sports'
+    },
+    {
+      label: 'Shopping',
+      value: 'shopping'
     },
     {
       label: 'Social',
@@ -27,11 +33,6 @@ const availEvents = [
     {
       label: 'Urban',
       value: 'drinking',
-    },
-
-    {
-      label: 'Aquatic',
-      value: 'water',
     },
     {
       label: 'Virtual',
@@ -55,13 +56,12 @@ export default class PickerViewer extends React.Component {
   render() {
     return (
 
-      <div className="eventView code-box-demo">
-    <PickerView className="config-provider"  style={style} data={availEvents}
-        onChange={this.onChange}
-        value={this.state.value}
-        cascade={false}>
-      </PickerView>
-
+      <div className="eventView scroller container code-box-demo">
+        <PickerView className="config-provider" style={style} data={availEvents}
+          onChange={this.onChange}
+          value={this.state.value}
+          cascade={false}>
+        </PickerView>
       </div>
     );
   }
