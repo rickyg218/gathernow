@@ -1,6 +1,4 @@
 
-
-
 .App {
   text-align: center;
 }
@@ -24,7 +22,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: salmon;
 }
 
 .App-link {
@@ -39,7 +36,5 @@
     transform: rotate(360deg);
   }
 }
-.Logo {
-  background-image: "../gnLogo.png";
-}
+
 @import '~antd/dist/antd.css';

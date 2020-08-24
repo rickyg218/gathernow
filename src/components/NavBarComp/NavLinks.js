@@ -1,5 +1,5 @@
 import React from "react";
-import {NavLink, Link} from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 
 import "../index";
@@ -18,10 +18,10 @@ const NavLink = () => {
   return (
     <navlink>
       <Link to="/CreateAccount">CreateAccount</Link>,
-        <Link to="/Home">Home</Link>,
-        <Link to="/LogIn">LogIn</Link>,
-        <Link to="/MyAccount">MyAccount</Link>,
-        <Link to="/CreateEvent">Create New Event</Link>,
+      <Link to="/Home">Home</Link>,
+      <Link to="/LogIn">LogIn</Link>,
+      <Link to="/MyAccount">MyAccount</Link>,
+      <Link to="/CreateEvent">Create New Event</Link>,
     </navlink>
   );
 };

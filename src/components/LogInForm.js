@@ -16,7 +16,8 @@ const styles = {
     borderStyle: `solid`,
     borderRadius: `${20}px`,
     color: `red`,
-  }}
+  }
+}
 
 function LogInForm() {
   let history = useHistory();
@@ -75,8 +76,8 @@ function LogInForm() {
             <Input
               prefix={<UserOutlined className="site-form-item-icon" />}
               placeholder="Email"
-              name = "email"
-              value = {loginFormData.email}
+              name="email"
+              value={loginFormData.email}
               onChange={loginInputChange}
             />
           </Form.Item>

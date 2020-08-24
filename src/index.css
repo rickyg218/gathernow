@@ -8,6 +8,13 @@ body {
   background-color: white;
 }
 
+.main-img {
+ max-width: 20%;
+ height: auto;
+  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -19,13 +26,18 @@ width: 700px;
 
 }
 
+#header-team {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 h1 {
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 p {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 /* login form styling from ant */
 .form-border {
@@ -34,7 +46,6 @@ p {
   border: 2px 2px 2px 2px;
   border-color: black;
   border-style: dashed;  
- 
 }
 
 .align {
@@ -42,7 +53,10 @@ p {
   justify-content: center;
   align-items: center;
 }
-
+.dropdown{
+  color:white;
+  font-size: 20px;
+}
 .login-form {
   max-width: 500px;
 }
@@ -66,9 +80,16 @@ p {
 html, body {
   height: 100%;
   margin: 0;
+  
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }
 
-.logo img{
+.nav-logo img{
   position: absolute;
   justify-content: flex-end;
   max-height: 125px;
@@ -76,6 +97,7 @@ html, body {
 .content-inside {
   padding: 20px;
   padding-bottom: 50px;
+  color: white;
 }
 .footer {
   position: -webkit-sticky;
@@ -86,7 +108,7 @@ html, body {
   background-color: #4b5ba2;
   color: white;
   text-align: center;
-  height: 75px;
+  height: 65px;
   border-top: 20px black;
   margin-top: 10px;
   
@@ -95,17 +117,25 @@ html, body {
 /* event viewer styling */
 
 .eventView {
-  background-color: rgb(23, 91, 131);
+  background-color:#4b5ba2b4;
+  scrollbar-color: white;
+  scrollbar-base-color: white;
   top: 10%;
   left: 0;
   right: 0;
   z-index: 99;
   width: 50%;
   align-content: center;
+  margin: auto;
+  opacity: 0.9;  
 }
-.code-box-demo .config-provider {
+
+.code-box-demo {
+  scrollbar-base-color: white;
+}
+.config-provider {
   font-size: inherit;
   margin: 16px 0 8px 0;
-
+  scrollbar-base-color: white;
 }
 
