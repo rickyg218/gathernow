@@ -42,7 +42,38 @@ export default function EventCard() {
    
    }
 
-     
+    const  deleteEvent= (event) =>{
+       const eventId=JSON.parse( event.currentTarget.id )
+        const eventsCopy = [...userEvent];
+
+      const myEventsFinal = []
+   for (let i = 0; i < userEvent.length; i++) {
+      if(userEvent[i].id !== eventId){
+         myEventsFinal.push(userEvent[i])
+      }
+      
+   }
+      setUserEvent(myEventsFinal)
+      // update you database with what you have in userEvent
+      
+      
+//         const filteredEvents = eventsCopy.filter(userEvent=>{
+//            if(userEvent.id == eventId){
+//               console.log(eventId);
+//               const indexToRemove = userEvent.toString().indexOf(eventId)
+//               console.log(indexToRemove)
+//             console.log("Inside if");
+//             ;
+              
+//            }else{
+//             //   return false
+//             console.log("inside else");
+//             ;
+//            }
+//         }) 
+//   console.log(eventId);
+ 
+      }
 return(
 // UserEvent.map(e =>{
 //    e.event_category
@@ -63,7 +94,7 @@ return(
             <Divider></Divider>
             <Button style={gridStyle}>Edit Event</Button>
             <Button style={gridStyle}>Chat</Button>
-            <Button style={gridStyle}>Delete Event</Button>
+            <Button onClick={deleteEvent} id={event.id} style={gridStyle}>Delete Event</Button>
             <WhiteSpace />
 
 

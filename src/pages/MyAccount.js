@@ -22,14 +22,13 @@ function MyAccount() {
 
   return (
     <>
-       {/* <div><h1>Welcome{currentUser.first_name}</h1> </div> */}
      
   {currentUser? <h1>Hello And Welcome {currentUser.first_name}</h1>:null}
-      {/* {UserEvent ? <h1>Hello And Welcome</h1> : null}   */}
+      
    
       <Container currentUser={currentUser} />
 
-      {/* <EventCard UserEvent={UserEvent} /> */}
+    
       
       <Button /> 
 
