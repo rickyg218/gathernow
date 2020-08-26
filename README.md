@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GatherNow
+Deployed link: https://gather-now.herokuapp.com/
+Project Creator:
+Cassandra, Ricky Mike, Hannibal, Anthony
+Project Description:
 
-## Available Scripts
+GatherNow is an interactive/mobile first app tailored for the spontaneous individual looking for Impromptu Adventurers, locally. The app is designed so users can sign-in and post or join impromptu local activies on an individual or small group basis within a 24 hour time slot. Are you new in town, perhaps interested in meeting new friends, or maybe a new hobby and would like to meet other like-minded individuals but short on time?  GatherNow is your gateway to an Impromptu Adventure!
 
-In the project directory, you can run:
+Table of Contents
+Installation
+Usage
+Contributing
+Links
+Email
+Installation:
+Developers please see the package.json file and then run NPM install on your command line.
+Usage:
+Starting on the home page anyone can sign-up/sign-in and create spontaneous events that will occur within the next 24 hours.
 
-### `npm start`
+Alternatively users can just scroll search and current events that other users posted.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+If the user does not have an account they will need to follow the Create Account link on the top left of the page and fill out the Create Account form.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Once the user has created an account they will need to log in. After logging in, the user is brought to the Home Page where they can scroll through a list of currently posted events by other users. Signed-in users can also click on MyAccount to go to a dashboard that shows user bio, events the user has selected, and other user profile information.
+You will be able to review, delete, and respond to events that you have selected as well as create and post a new event.
 
-### `npm test`
+Don't forget to stop by the Dev Team page to see who the masterminds behind GatherNow!
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Contributing:
+Please contact Cass, Ricky, Hannibal, Mike, or Anthony from the Dev Team page.
+Links
+linkedIn:
 
-### `npm run build`
+Cassandra Chamberlain: https://www.linkedin.com/in/cassandra-chamberlain-875794166/
+Ricky Garcia: https://www.linkedin.com/in/enrique-garcia-30353715a/
+Mike Shenk: https://www.linkedin.com/in/michaelshenk415/
+Hannibal Wyman: www.linkedin.com/in/hannibal-wyman-17068926
+Anthony Perez: https://www.linkedin.com/in/anthony-perez-5040b2a4/
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+GatherNow: https://gather-now.herokuapp.com/
+Cassandra Chamberlain: 
+Ricky Garcia: https://github.com/rickyg218
+Mike Shenk: https://github.com/mlshenk
+Hannibal Wyman: https://github.com/AychDubya
+Anthony Perez:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Contact
+If you have any questions, contact the author directly at:
+cssndrchmbrl25@gmail.com
+Rickyg218@gmail.com
+Back to the top
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+or check out the app: https://gather-now.herokuapp.com/
