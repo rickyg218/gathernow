@@ -38,7 +38,7 @@
   ---
  
  ## Contributing:
- ## Cass, Ricky, Hannibal, Mike, or Anthony from the Dev Team page.
+ ## Cass, Ricky, Hannibal, Mike, and Anthony from the Dev Team page.
 ---
 
  ## Links
