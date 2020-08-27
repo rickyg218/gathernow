@@ -26,7 +26,7 @@
 
   ## Usage:
 
-  * Starting on the home page anyone can sign-up/sign-in and create spontaneous events that will occur within the next 24 hours. Alternatively users can just scroll search and current events that other users posted.
+  * Starting on the home page anyone can sign-up/sign-in and create spontaneous events that will occur within the next 24 hours. Alternatively users can just scroll and search current events that other users posted.
   
   * If the user does not have an account they will need to follow the Create Account link on the top left of the page and fill out the Create Account form.
   * Once the user has created an account they will need to log in.
