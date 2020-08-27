@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-# Project_3_GatherNow!
-=======
   # GatherNow
 ### Deployed link: https://gather-now.herokuapp.com/
   ## Project Creators: 
-  ### Cassandra, Ricky Mike, Hannibal, Anthony
+  ### Cassandra, Ricky, Mike, Hannibal, Anthony
 ---
   
   ## Project Description:
@@ -79,4 +76,3 @@
 
 
 
->>>>>>> 45f2caab21005d0a34cf24b6a316536c327ed377
